@@ -1,0 +1,11 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: student
+  profiles:
+    default: local
+    active: local
+  graphql:
+    graphiql:
+      enabled: true # enable graphql playground http://localhost:5000/graphiql?path=/graphql

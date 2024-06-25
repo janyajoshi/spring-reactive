@@ -1,0 +1,12 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://127.0.0.1:3306
+    name: studentsDb
+    username: root
+    password: password
+    pool:
+      enabled: true
+      initial-size: 100
+      max-size: 500
+      max-idle-time: 30m
+      validation-query: SELECT 1

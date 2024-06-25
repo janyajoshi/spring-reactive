@@ -1,0 +1,15 @@
+type Students{
+    id: ID,
+    name: String,
+    registeredOn: Int,
+    status: Int
+}
+
+type Query{
+    getStudents:[Students]
+    getStudentBy(id: ID, status: Int, name: String):[Students]
+}
+
+type Mutation{
+    updateStatus(id: Int!, status: Int!):Boolean
+}
